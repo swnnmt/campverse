@@ -1,0 +1,46 @@
+#services:
+#  postgres:
+#    container_name: postgres
+#    image: 'postgres:15'
+#    environment:
+#      - 'POSTGRES_DB=Exe_finalProject'
+#      - 'POSTGRES_USER=postgres'
+#      - 'POSTGRES_PASSWORD=123456'
+#    ports:
+#      - "5432:5432"
+#
+#  redis:
+#    container_name: redis--pet-project
+#    image: redis:7.2
+#    ports:
+#      - "6379:6379"
+#    networks:
+#      - final-project
+#
+#  mail:
+#    container_name: mail-dev-pet-project
+#    image: maildev/maildev
+#    ports:
+#      - "1080:1080"
+#      - "1025:1025"
+#    networks:
+#      - final-project
+#
+#  rabbitmq:
+#    container_name: rabbitmq-dev-pet-project
+#    image: rabbitmq:3.11-management
+#    ports:
+#      - "5672:5672"
+#      - "15672:15672"
+#    networks:
+#      - final-project
+#    environment:
+#      - 'RABBITMQ_DEFAULT_USER=guest'
+#      - 'RABBITMQ_DEFAULT_PASS=guest'
+#
+#networks:
+#  final-project:
+#    driver: bridge
+#
+#volumes:
+#  postgres-data:

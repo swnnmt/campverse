@@ -1,0 +1,69 @@
+/* --- Khu vực bình luận chính (CommentList container) --- */
+.comment-section {
+  width: 100%;
+  max-width: 700px; /* Giới hạn chiều rộng tối đa cho dễ đọc */
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+/* --- Khu vực nhập bình luận mới --- */
+.comment-input {
+  margin-bottom: 25px;
+  border-bottom: 1px solid #eee; /* Đường phân cách */
+  padding-bottom: 15px;
+}
+
+.comment-input form {
+  display: flex;
+  gap: 10px;
+}
+
+.comment-input input[type="text"] {
+  flex-grow: 1; /* Input chiếm hết không gian có thể */
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 20px; /* Bo tròn góc input */
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.comment-input input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+.comment-input button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s, opacity 0.2s;
+  flex-shrink: 0; /* Ngăn button bị co lại */
+}
+
+.comment-input button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.comment-input button[type="submit"]:disabled {
+  background-color: #a0c9f8;
+  cursor: not-allowed;
+}
+
+/* --- Danh sách bình luận --- */
+.comment-list {
+  /* Bạn có thể thêm bất kỳ style nào để phân cách các comment-item tại đây */
+  padding-top: 10px;
+}
+
+/* Lưu ý: Các style chi tiết cho từng bình luận (CommentItem) sẽ nằm trong các class như 
+   .comment-item, .comment-avatar, .comment-main-content, v.v., như đã cung cấp ở các lần sửa trước. */
+
+   .comment-replies {
+  margin-left: 48px;
+  border-left: 2px solid #eee;
+  padding-left: 10px;
+}

@@ -1,0 +1,26 @@
+# docker build -t springboot-app .
+# docker run -p 8080:8080 springboot-app
+
+# start 
+# git checkout main
+# git pull origin main       # lấy code mới nhất từ remote main
+# git checkout swn           # về lại nhánh của bạn
+# git merge main             # merge code mới từ main vào nhánh của bạn
+           
+
+# inprocess
+# git add .
+# git commit -m "Thêm tính năng A"
+# git push origin swn
+
+# Cách 1: Merge trực tiếp (nhanh, ít kiểm soát)
+# git checkout main
+# git pull origin main       # đảm bảo main local mới nhất
+# git merge swn              # merge nhánh của bạn vào main
+# git push origin main       # đẩy code lên remote main
+
+# Cách 2: Tạo Pull Request (chuyên nghiệp, dễ review)
+
+# Push nhánh của bạn lên:
+
+# git push origin swn
